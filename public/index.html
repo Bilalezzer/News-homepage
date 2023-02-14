@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>News homepage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-body text-secondary-300 text-body">
+  <div class="mx-auto max-w-6xl py-12 px-4">
+    <header class="flex items-center justify-between">
+      <div>
+        <img src="/assets/images/logo.svg" alt="W.">
+      </div>
+      <div>
+        <button id="open" class="sm:hidden absolute top-14 right-8 z-10" >
+          <img src="/assets/images/icon-menu.svg" alt="">
+        </button>
+        <button id="close" class="hidden sm:hidden absolute top-14 right-8 z-10">
+          <img src="/assets/images/icon-menu-close.svg" alt="">
+        </button>
+      <nav id="menu" class="hidden sm:flex fixed inset-0 left-[30%] sm:left-0 bg-secondary-100 py-[10rem] sm:py-0 sm:static">
+        <ul class="flex flex-col gap-8 px-8 sm:flex-row sm:px-0">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="pt-12 md:grid grid-cols-3 gap-6">
+        <div class="col-span-2">
+          <div>
+            <picture>
+              <source srcset="/assets/images/image-web-3-desktop.jpg" media="(min-width: 600px)">
+              <img src="/assets/images/image-web-3-mobile.jpg" alt="">
+            </picture>
+          </div>
+          <div class="md:grid grid-cols-2">
+            <h1 class="text-6xl font-extrabold text-secondary-400 pt-7">The Bright Future of Web 3.0?</h1>
+            <div>
+              <p class="pt-6 pb-14">
+                We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                But is it really fulfilling its promise?
+              </p>
+              <a href="#" class="bg-primary-200 mb-8 inline-block md:inline py-4 px-7 uppercase text-secondary-100 tracking-[5px] font-bold hover:bg-secondary-400 transition ease-linear duration-300">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-secondary-400 px-7 py-5">
+          <h2 class="text-primary-100 text-4xl font-bold py-6">New</h2>
+          <a class="text-secondary-100 font-bold text-lg hover:text-primary-100 transition ease-linear duration-300" href="#">Hydrogen VS Electric Cars</a>
+          <p class="text-secondary-200 pt-4">Will hydrogen-fueled cars ever catch up to EVs?</p>
+          <div class="w-full h-[1px] bg-secondary-200 my-6"></div>
+          <a class="text-secondary-100 font-bold text-lg hover:text-primary-100 transition ease-linear duration-300" href="#">The Downsides of AI Artistry</a>
+          <p class="text-secondary-200 pt-4">What are the possible adverse effects of on-demand AI image generation?</p>
+          <div class="w-full h-[1px] bg-secondary-200 my-6"></div>
+          <a class="text-secondary-100 font-bold text-lg hover:text-primary-100 transition ease-linear duration-300 " href="#">Is VC Funding Drying Up?</a>
+          <p class="text-secondary-200 pt-4">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </div>
+    </main>
+    <section>
+      <div class="md:grid grid-cols-3 gap-12 pt-16">
+        <div class="card">
+          <div class="w-[6rem]">
+            <img src="/assets/images/image-retro-pcs.jpg" alt="">
+          </div>
+          <div class="col-span-2">
+            <p class="text-secondary-300 text-3xl font-extrabold">01</p>
+            <a href="#" class="text-secondary-400 font-extrabold text-lg py-2 hover:text-primary-200 transition ease-linear duration-300">Reviving Retro PCs</a>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="w-[6rem]">
+            <img src="/assets/images/image-top-laptops.jpg" alt="">
+          </div>
+          <div class="col-span-2">
+            <p class="text-secondary-300 text-3xl font-extrabold">02</p>
+            <a href="#" class="text-secondary-400 font-extrabold text-lg py-2 hover:text-primary-200 transition ease-linear duration-300">Top 10 Laptops of 2022</a>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="w-[6rem]">
+            <img src="/assets/images/image-gaming-growth.jpg" alt="">
+          </div>
+          <div class="col-span-2">
+            <p class="text-secondary-300 text-3xl font-extrabold">03</p>
+            <a href="#" class="text-secondary-400 font-extrabold text-lg py-2 hover:text-primary-200 transition ease-linear duration-300">The Growth of Gaming</a>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
